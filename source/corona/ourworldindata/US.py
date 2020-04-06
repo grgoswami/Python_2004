@@ -1,6 +1,7 @@
 
 import pandas as pd
 import seaborn 
+import matplotlib.pyplot as plt
 
 pd.set_option('display.max_rows', 5000)
 pd.set_option('display.max_columns', 1000)
@@ -22,9 +23,15 @@ US = full_data.loc[full_data.location == 'United States',:]
 print(US.shape)
 US.loc[:,'date'] = pd.to_datetime(US.date, format='%Y-%m-%d')
 US.set_index('date', inplace=True)
-US[['new_cases', 'new_deaths']].plot()
-US[['total_cases', 'total_deaths']].plot()
-US[['new_deaths', 'total_deaths']].plot()
 
-US.tail()
+print(US.tail())
+
+plt.figure()
+US[['new_cases', 'new_deaths']].plot(title='New counts from Corona')
+
+plt.figure()
+US[['total_cases', 'total_deaths']].plot(title='Total counts from Corona')
+
+plt.figure()
+US[['new_deaths', 'total_deaths']].plot(title='Death counts from Corona')
 
