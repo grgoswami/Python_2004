@@ -18,3 +18,6 @@ num_students = len(students)
 half_way_mark = num_students // 2
 print('\nFirst team is: ' + ', '.join(students[:half_way_mark]))
 print('\nSecond team is: ' + ', '.join(students[half_way_mark:]))
+
+# First team is: Yuvi, Evaan, Auyona, Ari
+# Second team is: Tista, Ben, Shraddha, Gia, Anya
