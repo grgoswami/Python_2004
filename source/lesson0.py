@@ -5,6 +5,8 @@
 """
 A multi line comment.
 Hi Mr. President.
+
+This is also called a 'doc string'
 """
 
 # Lets print
@@ -40,24 +42,98 @@ print(name)
 print(age)
 print(weight)
 
+# Working with constants
+2 + 3
+2 * 3
+3 / 2
+3 - 2
+
+21.4 + 90.7
+90 - 21
+21.4 + 90
+
+"Millburn" + "21.4"
+
+weight * age + 3 / 100 - 2000
+
+weight / age + weight * age * age * age
+
 # Work with list
+# Here students is the list
+# The names within the list are the elements of the list
 students = ['Ari', 'Anya', 'Ben', 'Gia', 'Yuvi', 'Shraddha', 'Tista',
         'Auyona', 'Evaan']
 print(students)
+len(students)
 
 # Index a list
+# Python indexes starting from 0 or Python starts counting from 0
+# Whereas we start counting from 1
+# When you start indexing from the begining of the list
+# you start from 0
 students[0]
 students[1]
 students[2]
+students[8]
+students[100]
 
+# When you start indexing from the end of the list
+# you start from -1
 students[-1]
 students[-2]
 students[-3]
 
+students[-8]
+students[-9]
+students[-10]
+students[-100]
+
+
 # Slice a list
+# 0 is starting index and 3 is the ending index, but we don't
+# touch 3, end just before 3
+# begin:end
 students[0:3]
+# Here 0 is the starting index and 3 is the ending index
 students[:3]
+# Here -3 is the starting index and end of the list is the 
+# ending index
 students[-3:]
+
+# Python indexing is call left inclusive, right exclusive
+students[-3:-1]
+students[3:5]
+students[-4:-2]
+students[-6:-3]
+students[0:100]
+students[:]
+
+# if, elif, else statement
+# are also known as 'conditional statements'
+age = 8
+print(age)
+
+if age < 2:
+    print('baby')
+else:
+    print('not a baby')
+
+# elif is short for else if     
+age = 97
+if age < 2:
+    print('baby')
+elif age < 4:
+    print('toddler')
+elif age < 13:
+    print('kid')
+elif age < 21:
+    print('teenager')
+else:
+    print('adult')
+          
+# length of a string
+len('Pizza')
+len('Cheese')
 
 # Build a list
 to_do_list = []
