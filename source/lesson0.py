@@ -10,9 +10,10 @@ This is also called a 'doc string'
 """
 
 # Lets print
-print("Hello world!")
+print("Hello world!" )                         
 print('Hello world!')
 print("Hi There")
+print('Hello world! , Hello World, Hi there, have fun and pizza blah blah blah')
 
 # Define variables
 name = 'Jane Doe' 
@@ -27,13 +28,28 @@ print(distance)
 
 place = 'Millburn'
 
-# For adding strings
+# For adding strings 
+# This is also called string concatenation
 print(name + ' from ' + place + ' is a cute baby')
 
 # For adding string and int
+# Below str() is a function which converts int and float
+# variables to strings
+3
+3.0
+'3'
+print(age)
+str(age)
+print(name + ' ' + str(age))
 print('{0} {1}'.format(name, age))
+
 # For adding string and float
+weight
+str(weight)
+print(name + ' ' + str(weight))
 print('{0} {1}'.format(name, weight))
+
+print(name + '      ' + str(age) + '          ' + str(weight))
 
 name = "John Doe"
 age = 3
@@ -46,17 +62,27 @@ print(weight)
 2 + 3
 2 * 3
 3 / 2
+2 / 3 
 3 - 2
+2 - 3
 
 21.4 + 90.7
 90 - 21
 21.4 + 90
+21.4 / 90
 
 "Millburn" + "21.4"
 
 weight * age + 3 / 100 - 2000
 
 weight / age + weight * age * age * age
+
+(weight / age) + (weight * age * age * age)
+
+5 - 3 * 2
+
+(5 - 3) * 2
+5 - (3 * 2)
 
 # Work with list
 # Here students is the list
@@ -107,6 +133,25 @@ students[-4:-2]
 students[-6:-3]
 students[0:100]
 students[:]
+
+# Remeber: You slice by indexing
+# Indexing works on string in the same way as in lists
+place = 'New York'
+print(place)
+place[0]
+place[1]
+place[2]
+
+place[-1]
+place[-2]
+place[-3]
+
+place[-4:-1]
+place[2:5]
+place[-3:]
+place[:-3]
+place[2:-2]
+
 
 # if, elif, else statement
 # are also known as 'conditional statements'
