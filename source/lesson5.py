@@ -30,12 +30,21 @@ for tt in students:
 # Range for loop
 list(range(1, 10))
 list(range(10))
+list(range(5))
 list(range(-2, 4))
 
+for ri in range(5):
+    print(ri)
+
+for ri in range(5):
+    print(str(ri))
+
 # This is called iterating over a range
-for ir in range(5):
-    print('This iteration is ' + str(ir))
-    
+# You can use any variable name instead of ir, but not any keywords
+# used by python, for example, for, if, str, print
+for item in range(5):
+    print('This iteration is ' + str(item))
+       
 # Iterating over a dictionary
 favorite = {
 'Ari': 'Dosa',
@@ -56,6 +65,15 @@ for Name, Food in favorite.items():
     
 for name, food in favorite.items():
     print('The favorite food of ' + name + ' is ' + food)
+    
+# Tuples
+colors = ('red', 'blue', 'green')
+colors
+
+# This is a for loop for tuples
+for cr in colors:
+    print(cr)
+    
     
     
     
