@@ -11,11 +11,11 @@ favorites = {
 'Evaan': ['Samosa', 'Briyani', 'Cookies']
 }
 
-#1. What's Tista's second favorite food?
+#1. What's Tista's second favorite food, print it?
 # Write your code below
 
 
-#2. How many favorite foods does Shraddha have?
+#2. How many favorite foods does Shraddha have, print it?
 # Hint: use the len() function that I used in class
 # Write your code below
 
