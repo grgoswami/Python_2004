@@ -1,0 +1,17 @@
+
+The following Capstone project ideas are inspired by:
+    
+https://papersowl.com/blog/best-capstone-project-topic-ideas
+    
+1. How to motivate students
+
+2. The importance of adjusting how to assess student learning
+
+3. The role of virtual classroom management in improving student behavior
+
+Your goal for this problem set is to take one of the topics above and 
+think about three concrete steps to solve any of the above problems.
+
+Our final goal is to take some of your unique ideas, refine them and
+build a real project using Python (and or other tools). May be some day
+you'll start your own company when one of your ideas grow big!
