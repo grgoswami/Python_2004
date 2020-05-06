@@ -1,0 +1,8 @@
+I uploaded the file Tista0.py on the GitHub website; Tista had sent to me
+this file last weekend.
+
+Please read up on the fun word game called Mad Libs
+here: https://en.wikipedia.org/wiki/Mad_Libs
+
+Now take a look at the example of Mad Libs in the Tista0.py file and make your
+own version. One of you will be presenting your solution in class on Thursday.
