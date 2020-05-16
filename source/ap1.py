@@ -10,3 +10,17 @@ with open('Goldilocks.txt', 'r') as file:
     lines = file.readlines()
     print(lines)
     
+# os: operating system
+    
+with open('/home/gopi/Python_202004/source/corona.txt', 'r') as file:
+    for line in file:
+        print(line)
+        
+paths = ['/home/gopi/Python_202004/source/corona.txt',
+         '/home/gopi/Python_202004/source/class.txt']
+for path in paths:
+    print('Reading file with path: ' + path)
+    with open(path, 'r') as file:
+        for line in file:
+            print(line)
+            
