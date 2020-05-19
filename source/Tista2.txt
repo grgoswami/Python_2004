@@ -1,0 +1,103 @@
+
+1.  numbers_to_sort = [50, 100, 409, -12, 2408, 567]
+
+numbers_to_sort.sort(reverse = True)
+print('\nThe numbers_to_sort sorted by descending')
+print(numbers_to_sort)
+
+numbers_to_sort.sort()
+print('\nThe numbers_to_sort sorted by ascending')
+print(numbers_to_sort)
+
+2. angle1 = int(input('Enter an angle'))
+angle2 = int(input('Enter an angle'))
+
+angle_sum = (angle1 + angle2)
+
+if angle_sum >= 180 :
+    print ('Invalid Input')
+else:
+    print (180 - angle1 - angle2 )
+
+3. number = int(input("Enter an integer number"))
+remainder = number % 2
+
+if (remainder == 0):
+    print (number,'is an even number')
+else:
+     print (number,'is an odd number')
+
+4. # This program only works for squares and rectangles
+side1 = int(input('Enter a length'))
+side2 = int(input('Enter a length'))
+
+if side1 == side2:
+    print ('Square')
+    print ('Area :')
+    print (side1 * side2)
+    print ('Perimeter :')
+    print (side1 * 2 + side2 * 2)
+else:
+    print ('Rectangle')
+    print ('Area :')
+    print (side1 * side2)
+    print ('Perimeter :')
+    print (side1 * 2 + side2 * 2)
+
+5. def fibonacci_series(n):    
+    a, b = 0, 1
+    while a < n:
+        print(a, end = ' ')
+        a, b = b, a+b
+    print()
+
+def fibonacci_series0(n):  
+    end_result = [str('')]
+    a, b = 0, 1
+    while a < n:
+        result.extend(a)
+        a, b = b, a+b
+    return end_result
+
+fibonacci_series()
+
+6. numerator =  int(input("Enter an numerator"))
+denominator =  int(input("Enter a denominator"))
+
+print (numerator/denominator)
+
+7. degree =  int(input("Enter an angle"))
+if degree == 90:
+    print ('right angle')
+elif degree < 90:
+    print ('acute angle')
+elif degree > 90 and degree < 180:
+    print ('obtuse angle')
+elif degree == 180:
+    print ('straight angle')
+elif degree > 180 and degree < 360:
+    print ('reflex angle')
+elif degree == 360:
+    print ('complete angle')
+else :
+    print ('Invalid Angle')
+        
+8. word = 'ABCDEFGhijKK'
+word1 = ''
+
+for q in word:
+    if (q.isupper()) == True:
+        word1 += (q.lower())
+    elif (q.islower()) == True:
+        word1 += (q.upper())
+    elif (q.isspace()) == True:
+        word1 += q 
+    
+print (word1)
+
+9. # Put a space before answering the first question
+#NO UPPERCASE LETTERS
+word = input('Enter a word: ')
+
+pig_latin = (word[1:] + word[0] + 'ay')
+print(word + ' in pig latin would be ' + pig_latin)
