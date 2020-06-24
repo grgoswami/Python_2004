@@ -21,9 +21,22 @@ class XSV_Reader:
         return self.create_data_frame_from_lines_()
     
     def read_lines_from_file_(self):
-        pass
+        with open(self.filepath, 'r') as infile:
+            self.lines = infile.readlines()
+            print(self.lines)
     
     def create_data_frame_from_lines_(self):
+        self.set_header_()
+        self.set_rows_()
         return None
     
+    def set_header_(self):
+        header_line = self.lines[0]
+        self.columns = header_line.split(self.separator)
+        print(self.columns)
+        
+    def set_rows_(self):
+        pass
+        
+        
         
