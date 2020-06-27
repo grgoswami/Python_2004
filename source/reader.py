@@ -31,12 +31,22 @@ class XSV_Reader:
         return None
     
     def set_header_(self):
+        # The following process of splitting the header line 
+        # into the column names is also called parsing the 
+        # header line
         header_line = self.lines[0]
         self.columns = header_line.split(self.separator)
         print(self.columns)
+        # List comprehension: create a list by doing col.trim()
+        # for each element of the list self.columns
+        self.columns = [col.strip() for col in self.columns]
+        print(self.columns)
         
     def set_rows_(self):
-        pass
+        self.cells = {}
+        for col in self.columns:
+            self.cells[col] = []
+        print(self.cells)
         
         
         
