@@ -47,6 +47,15 @@ class XSV_Reader:
         for col in self.columns:
             self.cells[col] = []
         print(self.cells)
+        for line in self.lines[1:]:
+            print(line)
+            values = line.split(self.separator)
+            values = [val.strip() for val in values]
+            print(values)
+            for column_number, column in enumerate(self.columns):
+                self.cells[column].append(values[column_number])
+        print(self.cells)
+            
         
         
         
