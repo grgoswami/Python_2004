@@ -1,5 +1,5 @@
 
-import pandas
+import pandas as pd
 
 # For now let's only consider three kinds of separators: , or \t or |
 class XSV_Reader:
@@ -27,9 +27,8 @@ class XSV_Reader:
     
     def create_data_frame_from_lines_(self):
         self.set_header_()
-        self.set_rows_()
-        return None
-    
+        return self.set_rows_()
+        
     def set_header_(self):
         # The following process of splitting the header line 
         # into the column names is also called parsing the 
@@ -44,9 +43,12 @@ class XSV_Reader:
         
     def set_rows_(self):
         self.cells = {}
-        for col in self.columns:
-            self.cells[col] = []
+        for column in self.columns:
+            self.cells[column] = []
         print(self.cells)
+        return self.parse_lines_()
+    
+    def parse_lines_(self):
         for line in self.lines[1:]:
             print(line)
             values = line.split(self.separator)
@@ -55,6 +57,11 @@ class XSV_Reader:
             for column_number, column in enumerate(self.columns):
                 self.cells[column].append(values[column_number])
         print(self.cells)
+        ret = pd.DataFrame()
+        for column, values in self.cells.items():
+            ret.loc[:,column] = values
+        return ret
+    
             
         
         
