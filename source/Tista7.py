@@ -2,13 +2,24 @@ import requests
 
 from bs4 import BeautifulSoup
 
-# url = 'http://github.com'
+# credit: https://medium.com/@ProxiesAPI.com/scraping-the-new-york-times-with-python-and-beautiful-soup-6e5f3bc58e39
+
 url = 'https://www.nytimes.com/'
-req = requests.get(url)
-req_html = req.text
-print(req_html)
+response = requests.get(url) 
+print(response.content)
 
-# some requests code here for getting r_html 
-
-soup = BeautifulSoup(req_html)
-title = soup.find('span', 'articletitle').string
+# This example is hard to make sense but it's a baby 'news aggregator'
+soup = BeautifulSoup(response.content,'lxml')
+for item in soup.select('.assetWrapper'):
+    #print(item)
+    div = item.find('div')
+    h2 = item.find('h2')    
+    #print(div)
+    if h2 is not None:
+        print(h2.get_text())
+        print(72 * '-')
+    if div is not None:
+        print(div.get_text())
+        print('\n\n')
+        
+        
