@@ -18,11 +18,25 @@ print(full_data.shape)
 print(full_data.head(10))
 print(full_data.tail())
 
+type(full_data)
+type(full_data.date)
+type(full_data.location)
+
+print(full_data.head())
+print(full_data.loc[0,'location'])
+print(full_data.loc[1,'location'])
+print(full_data.loc[1,'new_deaths'])
+
+print(full_data.loc[1,'total_deaths'] / full_data.loc[1,'total_cases'])
+
+# The 'count' row has number of non-NA values in the column
 print(full_data.describe())
 print(full_data.location.value_counts())
+print(full_data.date.value_counts())
 
 US = full_data.loc[full_data.location == 'United States',:]
 print(US.shape)
+print(US.head())
 US.loc[:,'date'] = pd.to_datetime(US.date, format='%Y-%m-%d')
 US.set_index('date', inplace=True)
 
@@ -36,4 +50,8 @@ US[['total_cases', 'total_deaths']].plot(title='Total counts from Corona')
 
 plt.figure()
 US[['new_deaths', 'total_deaths']].plot(title='Death counts from Corona')
+
+US.loc[:,'death_rate_percentage'] = (US.total_deaths / US.total_cases) * 100
+plt.figure()
+US[['death_rate_percentage']].plot(title='Death rate percentage from Corona')
 
