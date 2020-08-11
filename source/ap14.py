@@ -31,6 +31,7 @@ print(tab.loc[tab.first_name == 'Jane','age'])
 
 print(tab.loc[tab.first_name == 'John','age'])
 
+# '&' is for and
 print(tab.loc[(tab.first_name == 'John') &
               (tab.last_name == 'Doe'),'age'])
 
@@ -49,3 +50,28 @@ print(tab.age.loc[1])
 
 print(tab.loc[tab.first_name == 'Jane','age'])
 print(tab.loc[tab.first_name == 'Jane','age'].iloc[0])
+
+print(tab.loc[(tab.first_name == 'John'),:])
+
+# Referesh
+l0 = [1, 2020, 19]
+print(l0[:])
+print(l0[1:])
+print(l0[:-1])
+
+print(tab.loc[(tab.first_name == 'John') &
+              (tab.last_name == 'Smith'),:])
+
+# '|' is for or
+print(tab.loc[(tab.first_name == 'John') |
+              (tab.first_name == 'Jane'),:])
+
+print(tab.loc[(tab.age >= 10),:])
+
+print(tab.loc[tab.age <= 10,:])
+
+print(tab.loc[tab.age > 10,:])
+
+print(tab.loc[tab.age < 10,:])
+
+print(tab.loc[(tab.first_name == 'John'),['first_name', 'age']])
