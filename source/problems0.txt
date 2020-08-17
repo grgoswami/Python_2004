@@ -1,0 +1,71 @@
+
+Work on as many problems as you can from the list below. You'll get 10 extra
+points for each problem if you use classes in the solution. Note, the full
+points add up to more than 100!
+
+Please don't copy paste the answer from the web for any problem. If you do and
+aren't able to explain your logic or steps, you'll be awarded zero for the
+problem.
+
+1. 20 points | Rock Paper Scissors (or RPS) is one of my favorite Python projects for
+beginners. It’s simple enough but still challenging since you need to think
+about how to turn the game rules into logic for the program.
+
+The rules are simple:
+
+Paper wins over rock
+
+Rock wins over scissors
+
+Scissors win over paper
+
+Have your program generate a random answer for the computer – but don’t
+display it. Then ask the player for their answer and then decide who won. 
+
+
+2. 30 points | Hangman is one of the best Python projects for beginners who want
+a bit of a challenge. The game is about guessing a random word with a limited
+number of guesses.
+
+Although Hangman may sound rather simple, you need to consider a few key points,
+such as:
+
+You need to set a maximum limit for guesses. The player needs to be notified   
+about the remaining number of guesses. Your player needs to be able to input  
+their guesses. To get started, you need a way to generate random words to be 
+guessed. The best way is to simply create a separate text file where you
+store the words or short phrase.                                           
+
+This Python project will probably take you a bit longer, but it’s great
+practice. You will have to think about random choice, variables, boolean values,
+inputs and outputs, strings, length, and much more.
+
+
+3. 10 points | An acronym Python program will take a given phrase or text and
+convert it into its acronym. That is, a word that consists of the first letters
+of each word in the text.
+
+To make your acronym easier to read, go ahead and turn the letters into
+uppercase with Python. Also, think about how the program will take text as input
+from the user while separating that user input from the logic itself.
+
+
+4. 30 points | Create a Python program that generates a random password for the
+user. Make sure your program takes a few inputs from the user:
+
+How long should the password be? How many characters should there be? Should
+it have both uppercase and lowercase letters? Should it include numbers and
+special symbols, too? The best part about this small Python project is that you
+can actually use it for generating strong passwords for your own user accounts
+across the Web!
+
+
+5. 40 points | Write a Python program that takes a text file as an input and
+outputs how many times each word occurs in the text.
+
+You can start small by counting the number of words in a list, for example. Use
+the Counter collection for this.
+
+Once you understand how the collection works, move on to more advanced inputs,
+such as longer text files. 
+
