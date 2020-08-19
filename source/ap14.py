@@ -75,3 +75,12 @@ print(tab.loc[tab.age > 10,:])
 print(tab.loc[tab.age < 10,:])
 
 print(tab.loc[(tab.first_name == 'John'),['first_name', 'age']])
+
+print(tab.loc[(tab.age >= 10),['last_name', 'age']])
+
+print(tab.loc[:,['last_name', 'age']])
+
+print(tab[['last_name', 'age']])
+
+
+
