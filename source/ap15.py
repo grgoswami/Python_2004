@@ -11,6 +11,9 @@ full_data = pd.read_csv(r'/home/gopi/Python_202004/data/corona/ourworldindata/fu
 print(full_data.head())
 print(full_data.tail())
 
+# The row numbers in pandas is also known as the 'index'
+# Here we are setting the index to be the dates instead of the 
+# row numbers
 full_data.set_index(pd.to_datetime(full_data.date, format='%Y-%m-%d'),
                     inplace=True)
 print(full_data.tail())
