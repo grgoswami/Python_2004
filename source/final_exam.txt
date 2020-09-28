@@ -1,0 +1,73 @@
+
+Python_202004 | Final Exam | Sep 28, 2020
+
+INSTRUCTIONS:
+
+Work on as many problems as you can from the list below. Note, the full
+points add up to more than 100!
+
+Please don't copy paste the answer from the web or take help from anyone else
+(friends or parents) for any problem. I'll be asking questions on your work
+and if you aren't able to explain your logic or the steps involved, you'll be
+awarded zero for the entire problem.
+
+Even if you can't write the whole program explain the logic or the steps in
+English and propose simple Python code to carry out some of the steps.
+
+Don't get hung up on one single problem, attempt all the problems first and
+then go back to the diffcult ones.
+
+If you write your answer on paper, ask your parents to take picture of the pages
+and email them to me as attachments.
+
+If you write your answer in a file, please email me the file as an attachment.
+
+Any answer emailed to me after 10 minutes of the end of the exam will be not
+be accepted.
+
+PROBLEMS:
+
+1. 10 points | Let's define a Python string: str = 'Awesome'. How can we get
+the two words, 'Awe' and 'some' from str?
+
+2. 20 points | Solve the following problem two ways: using for loop and 
+using list comprehension. Create a list of multiples of 3 between 1 and 25.
+
+3. 30 points | Download the file tolls.txt from the Github website. It looks
+like the following:
+
+ABC123 15
+XYZ456 5
+ABC123 10
+ABC123 5
+XYZ456 15
+
+Each line has a license plate number (of cars) followed by the toll it paid.
+Note, the same car may pay toll multiple times since it may take multiple
+highways. Read the file into a dictionary of lists. Then print the unique
+license plate number followed by total toll paid like so:
+
+ABC123 30
+XYZ456 20
+
+4. 40 points | Write two classes FoodItem and ShoppingCart.
+
+The FoodItem class should have the following members and methods: name, price,
+describe(). The describe() method print the name and price of the food item.
+
+The ShoppingCart should have the following members and methods: food_items (a
+dictionary), add_to_cart(food_item, quantity) and show(). The add_to_cart method
+should add the given food_item in the given quantity to food_items. The show
+method should show all the food items in the cart and their quantities. 
+
+
+5. 20 points | Write a function change_sentence(sentence, add_word, position)
+that inserts 'add_word' after the word at the 'position' of 'sentence'. For
+example:
+
+change_sentence('NYC is a city', 'big', 2)
+
+should return
+
+'NYC is a big city'
+
